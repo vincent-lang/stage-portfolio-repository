@@ -1,0 +1,48 @@
+body {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: cursive;
+    color: #Ff0000;
+    font-size: 32px;
+    padding: 10px;
+    background-color: darkgray;
+}
+
+p {
+    font-family: monospace;
+    color: #A52a2a;
+    margin: .5rem 0;
+    float: left;
+}
+
+img {
+    float: right;
+    max-width: 50%;
+}
+
+a {
+    font: cursive;
+    font-weight: bold;
+    color: #29C;
+}
+
+ul {
+    color:rgb(0, 255, 17);
+    font-weight: bold;
+}
+
+li {
+    color: blue;
+    font-weight: bolder;
+}
+
+strong {
+    color: red;
+    font-family: cursive;
+}
