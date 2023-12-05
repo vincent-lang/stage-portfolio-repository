@@ -1,0 +1,149 @@
+/** for the size of the txt and the font die we gebruiken voor de txt */
+html {
+    font-size: 18px;
+    font-family: noto serif;
+}
+
+/** margin fror the nav bar so the nav bar is at the top an the background color for the webpage */
+body {
+    margin: 0;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/** this puts the link and divs in a row and in the middle and it spaces the links evenly over the nav bar */
+/** sets the height for the nav bar and the background color for the nav bar */
+nav.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3rem;
+    background-color: rgb(255, 0, 0);
+}
+
+/** sets the links in the middle and makes the boxes around the links with the height and width */
+/** adds background color 'black' to the boxes around the links and removes the line under the links */
+/** also it adds the color white to the txt so the txt is readable*/
+a.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/** puts a shadow around the divs for every element with id shadow */
+div#shadow {
+    box-shadow: 0rem 0rem 0.8rem 0rem rgb(125, 125, 125), 0rem 0rem 0.2rem 0rem rgb(125, 125, 125);
+}
+
+
+/** puts the links and social media and contact info in a row next to each other and put them in the middle with a red background */
+/** adds space between the product card div and the footer so they don't touch each other */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: rgb(255, 0, 0);
+}
+
+/** puts margin al around the footer links so there is space between them */
+#footer-links {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/** changes the img width to 35% so that the img is smaller */
+.footer-img {
+    width: 35%;
+}
+
+/** puts the txt of the contact info div in the middle of the box and puts the width to a sertain width so that the txt fit in the box */
+/** adds the height so the txt looks better in the box and adds margin so the boxes of the contact info don't touch each other */
+div.contact-info>p {
+    margin: 1rem 0rem 0rem 0rem;
+    height: 3.5rem;
+    text-align: center;
+}
+
+/** puts the social media img next to each other and give the div space between the img and the link from the nav bar */
+div.social-media {
+    display: flex;
+    margin-left: 5rem;
+}
+
+/** makes the img not visible */
+img.menu {
+    display: none;
+}
+
+/** this media query makes the page more responsive for different devices in this case mobile */
+/** it's only for the nav bar on all pages */
+@media screen and (max-width: 992px) {
+
+    /** makes the img for the hamburger menu visible for mobile */
+    img.menu {
+        display: block;
+    }
+
+    /** makes the nav bar links not visible on mobile on the top */
+    nav>a.links {
+        display: none;
+    }
+
+    /** puts the img for the nav bar menu to the right of the nav bar instead of the middle */
+    /** adds some space between the img and the right border of the nav bar */
+    nav.navigation {
+        justify-content: end;
+        padding-right: 1rem;
+    }
+
+    /** puts the navigation links under each other instead of next to each other when the user clicks on the img */
+    nav.navigation.active {
+        display: block;
+    }
+
+    /** makes it so the img for the hamburger menu is to the right when the users clicks on it */
+    /** and places the img also a bit higher from the bottom so it is in his place */
+    nav.navigation.active>img.menu {
+        position: relative;
+        top: -11.2rem;
+        left: 20.25rem;
+    }
+
+    /** makes the links in the nav bar visible when the users has clicked on the img hamburger menu */
+    /** and put the links below the nav bar on the right below the hamburger menu img */
+    nav.navigation.active>a.links {
+        display: flex;
+        position: relative;
+        left: 14.9rem;
+        top: 3rem;
+    }
+
+    /** makes the navigation links and the social media img's and the contact info place under each other */
+    /** so it all fits better on mobile */
+    footer {
+        flex-direction: column;
+    }
+
+    /** gives the links more space on the left so they are more centered */
+    a#footer-links {
+        margin-left: 2rem;
+    }
+
+    /** makes the social media img's a little bigger than they where */
+    /** adds some space between the navigation links/contact info and the social media img's */
+    .social-media>div.media {
+        margin: 2rem 0rem 2rem 0rem;
+        width: 6rem;
+    }
+
+    /** adds space between the last contact info box and the footer border at the bottom */
+    div.contact-info {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,137 @@
+/** puts the img banner in the middle and adds margin to the top of the banner so the banner doesn't touch the nav bar */
+/** added flex direction so the logo and the banner img are under each other */
+div.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+/** set the div with the products in the middle of the screen */
+div.card {
+    display: flex;
+    justify-content: center;
+}
+
+/** does the width of the card div and the height and it has margin top so the card doesn't touch the banner */
+div.producten {
+    margin-top: 4rem;
+    width: 33.5rem;
+    height: 60rem;
+    background-color: rgb(160, 160, 160);
+}
+
+/** changes the width of the the product divs so 2 can fit next to each other */
+/** adds margin to the top of every product div so that the divs have some space between them on the top side */
+/** adds padding so the images don't touch the left and right of the product card */
+div.product {
+    width: 35%;
+    margin-top: 2rem;
+    padding: 0rem 1rem 0rem 1rem;
+    background-color: rgb(130, 130, 130);
+}
+
+/** sets two product next to each other and spaces the content in the group div evenly */
+div.group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** puts the width only of the sunset-orange and sunset-purple img to 82% without the margin */
+/** added space to the bottom so the img is put in the middle */
+img#sunset-orange,
+img#sunset-purple {
+    width: 82%;
+    margin-left: 1rem;
+}
+
+/** changes the margin bottom only for the popeye img because it didn't line the product info boxes with the others */
+img#popeye {
+    margin-bottom: 1rem;
+}
+
+/** sets how the width of the img is to 100% */
+/** sets margin to the small product img so it fits the box */
+img.product {
+    width: 100%;
+    margin: 2rem 0rem 1.7rem 0rem;
+}
+
+/** sets the txt in the middle and adds a background to the txt */
+/** adds a color white so the txt is readable and adds margin so the box of the txt is in the middle */
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/** overrides the width from the p standard so that the footer contact text box isn't to small for the text */
+/** sets the box for the text in the footer to a width of 20rem so the text fit with enough room in the box */
+p.footer-contact {
+    width: 20rem;
+}
+
+/** exclusive for the name box of the author so its put in the middle */
+p#author {
+    margin: 1rem 0rem 1rem 1.2rem;
+}
+
+/** puts the name of the product and the price next to each other */
+.product-info {
+    display: flex;
+}
+
+/** puts the txt from the name of the product and the price in the middle of the box and adds margin to the top/bottom/left/right of the boxes */
+/** adds more height only to the p with the product name and price so the box fits with the name of the products */
+.product-info>p {
+    text-align: center;
+    height: 5rem;
+    margin: 1rem 0.1rem 1rem 0.2rem;
+}
+
+/** adds space between the card the the p class title */
+/** puts the height for the p class title to 3.5rem so the txt fits better in the box */
+/** adds the font dm-serif to the title class */
+p.title {
+    font-family: DM-serif;
+    margin-top: 1rem;
+    height: 3.5rem;
+}
+
+/** this media query makes only the landing page more responsive to mobile */
+@media screen and (max-width: 992px) {
+
+    /** makes the img's in the banner div smaller and adds space on the left of the img's so they don't touch the side of the screen */
+    div.banner {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    /** makes the card for the product fit on screen and adds more in the height so all the products fit in the card */
+    div.producten {
+        width: 16rem;
+        height: 117.5rem;
+    }
+
+    /** puts the product under each other and adds some space to the left so the product info don't touch the card border */
+    div.group {
+        display: block;
+        margin-left: 1.7rem;
+    }
+
+    /** puts the author title p more in the center and makes the box smaller */
+    p#author.title {
+        margin-left: 1rem;
+        width: 8.5rem;
+    }
+
+    /** adds space between the author box and the product div border on the top */
+    /** and makes the width of the product card a little bigger so it fits better */
+    div.product {
+        padding-top: 1rem;
+        width: 10rem;
+    }
+}
