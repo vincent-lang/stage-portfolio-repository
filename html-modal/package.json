@@ -1,0 +1,24 @@
+{
+  "name": "opdracht",
+  "version": "1.0.0",
+  "description": "**We zijn nu al een tijdje bezig met JavaScript en jullie weten ondertussen hoe je elementen moet selecteren met de querySelector en querySelectorAll functies. En hoe je aan die elementen EventListeners koppelt om functionaliteiten toe te voegen.**",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css",
+    "minify": "sass -w scss:css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBOU-ICT-Academie/opdracht-5-modal-vincent-lang.git"
+  },
+  "author": "Vincent van de Merwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBOU-ICT-Academie/opdracht-5-modal-vincent-lang/issues"
+  },
+  "homepage": "https://github.com/MBOU-ICT-Academie/opdracht-5-modal-vincent-lang#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
