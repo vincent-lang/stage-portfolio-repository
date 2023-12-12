@@ -1,0 +1,100 @@
+/** does the width of the card div and it has margin top so the card doesn't touch the nav bar */
+/** adds display flex so the txt and the img are next to each other */
+/** adds justify content so the img and txt have spaces between them */
+div.producten {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    width: 45rem;
+    background-color: rgb(160, 160, 160);
+}
+
+/** set the div with the products in the middle of the screen */
+/** puts the div's with the product under each other */
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** puts the width only of the sunset-orange img to 100% without the margin */
+img#img-product {
+    width: 100%;
+}
+
+/** adds space on the top and bottom so the product img's don't touch the div card */
+/** adds the width to a sertain point so the img is more spaced evenly with the product info div */
+/** adds flex to it with align items center so the img's get put in the middle */
+div.product-img {
+    display: flex;
+    align-items: center;
+    width: 18.9rem;
+}
+
+/** sets the txt in the middle and adds a background to the txt */
+/** adds a color white so the txt is readable and adds margin so the box of the txt is in the middle */
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/** adds space between the p's in the with the class info */
+/** adds padding to the txt so the txt don't touch the border of the box */
+p.info {
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+/** adds space between the card the the p class title */
+/** puts the height for the p class title to 3.5rem so the txt fits better in the box */
+/** adds the font dm-serif to the title class */
+/** adds padding to the txt so the box is more inline */
+/** added font-size so the title's are bigger then the info txt */
+p.title {
+    font-family: DM-serif;
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+/** adds space between the product info div and the card div */
+div.product-info {
+    margin-bottom: 0.5rem;
+}
+
+/** this media query makes only the product page and the product detail page without the details of product's more responsive to mobile */
+@media screen and (max-width: 992px) {
+    
+    /** puts the information under each other and makes the card to a certain width */
+    div.producten {
+        display: block;
+        width: 21.5rem;
+    }
+
+    /** makes the img and the txt boxes smaller so they fit better */
+    div.product-img,div.product-info {
+        width: 15rem;
+        margin-left: 0.7rem;
+    }
+
+    /** puts more space between the txt boxes and the card border at the bottom */
+    div.product-info {
+        margin-bottom: 1.5rem;
+    }
+
+    /** adds space betweenthe img and the card border at the top and adds more space to the left of the img's so they are more centered */
+    div.product-img {
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    /** sets the txt boxes of the title and product info to a certain width so the txt fits better */
+    p.title,p.info {
+        width: 19rem;
+    }
+}

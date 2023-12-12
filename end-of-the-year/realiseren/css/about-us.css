@@ -1,0 +1,120 @@
+/** does the width of the card div and it has margin top so the card doesn't touch the nav bar */
+/** adds the display flex and flex direction so the img div is above the txt div */
+div.producten {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 45rem;
+    background-color: rgb(160, 160, 160);
+}
+
+/** set the div with the products in the middle of the screen */
+/** puts the div's with the product under each other */
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** puts the width only of the sunset-orange img to 100% without the margin */
+img#img-product {
+    width: 100%;
+}
+
+/** changes the width of the gallery img's so they are smaller than the bigger img */
+img#img-example {
+    width: 7rem;
+}
+
+/** adds space on the top so the product img's don't touch the div card and added space to the left so the div is in the middle */
+/** makes the img smaller so it fits better */
+/** puts the img's in the middle of the div and put the small img in the middle too depending on many img's in that div */
+/** puts the img's below the bigger img next to each other and puts the bigger img above the other 2 img's */
+div.product-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40rem;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+
+/** sets the txt in the middle and adds a background to the txt */
+/** adds a color white so the txt is readable and adds margin so the box of the txt is in the middle */
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/** adds space between the p's in the with the class info */
+/** adds padding to the txt so the txt don't touch the border of the box */
+p.info {
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+/** adds space between the card the the p class title */
+/** puts the height for the p class title to 3.5rem so the txt fits better in the box */
+/** adds the font dm-serif to the title class */
+/** adds padding to the txt so the box is more inline */
+/** added font-size so the title's are bigger then the info txt */
+p.title {
+    font-family: DM-serif;
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+/** adds space between the product info div and the card div */
+div.product-info {
+    margin-bottom: 0.5rem;
+}
+
+/** makes it so the information about the company is next to each other */
+/** also it adds some space between the to div's with the company information */
+div.about-company {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** this media query makes only the about us page more responsive to mobile */
+@media screen and (max-width: 992px) {
+
+    /** makes the card smaller in the width so it fits more on the screen */
+    div.producten {
+        width: 20rem;
+    }
+
+    /** makes the skateroom img smaller so it fits better and put it more to the left */
+    img#img-product {
+        width: 40%;
+        margin-left: -0.5rem;
+    }
+
+    /** puts the two example img's more to the left */
+    img#img-example {
+        position: relative;
+        left: -12.5rem;
+    }
+
+    /** puts the 2 div's of info under each other */
+    div.about-company {
+        display: block;
+    }
+
+    /** makes the txt boxes smaller so they fits better in the card and puts space between the card border and the txt boxes */
+    p.title,p.info {
+        width: 15rem;
+        margin-left: 2rem;
+    }
+
+    /** puts more space on the bottom of the product info div's */
+    div.product-info {
+        margin-bottom: 1.5rem;
+    }
+}
