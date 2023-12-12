@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(96, 255, 96);
+}
+
+a {
+    text-decoration: none;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h1.homepage, h2.homepage, a.homepage {
+    margin: 1rem;
+}
+
+h1, h1.homepage, h2.homepage, a, a.homepage, label {
+    color: blue;
+}
+
+table, input {
+    color: blue;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem;
+}
+
+table {
+    margin: 0.2rem;
+}
+
+table>tbody>tr>th {
+    width: 10rem;
+}
+
+table>tbody>tr>th, table>tbody>tr>td {
+    text-align: center;
+}
+
+table>tbody>tr>th ,table>tbody>tr>td {
+    border-left: 1px solid blue;
+}
+
+table>tbody>tr>th.right, table>tbody>tr>td.right {
+    border-right: 1px solid blue;
+}
+
+table>tbody>tr>th, table>tbody>tr>th.right,table>tbody>tr>td {
+    border-bottom: 1px solid blue;
+}
+
+input {
+    background-color: rgb(96, 255, 96);
+    border: 1px solid blue;
+}
+
+input, input.edit {
+    padding: 0.5rem;
+}
+
+input.edit {
+    margin: 1rem;
+}
+
+input:hover {
+    cursor: pointer;
+}
