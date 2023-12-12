@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use 'sass:math';
+
+$amount: 6;
+$colors: ();
+
+@for $i from 1 through $amount {
+  $deg: math.div(360, $amount) * $i;
+  $colors: map.set($colors, $i, hsl($deg, 50%, 50%));
+}
+
+@each $num, $color in $colors {
+  .c-#{$num} {
+    background-color: transparentize($color, .8);
+    border: 0.07em solid $color;
+  }
+}
